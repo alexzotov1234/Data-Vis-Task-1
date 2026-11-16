@@ -1,0 +1,219 @@
+{
+  "accrual_periodicity": "other",
+  "additional_limitations": "",
+  "citation": "Healthy Communities Data and Indicators Project, CDPH. 2017. Modified Retail Food Environment Index.",
+  "contact_email": "OpenData@cdph.ca.gov",
+  "data_collection_tool": "Dun and Bradstreet geocoded data on the locations of food retailers in California was obtained via an internal data user agreement with the California Department of Public Health, Nutrition Education and Obesity Prevention Branch (NEOPB). Methodology developed by the Centers for Disease Control and Prevention (CDC) was used to calculate the modified retail food environment index, with some modifications (https://ftp.cdc.gov/pub/Publications/dnpao/census-tract-level-state-maps-mrfei_TAG508.pdf). ",
+  "data_license": "Terms of Use",
+  "de_identification_method": "",
+  "description": "This table contains data on the modified retail food environment index for California, its regions, counties, cities, towns, and census tracts.   An adequate, nutritious diet is a necessity at all stages of life. Pregnant women and their developing babies, children, adolescents, adults, and older adults depend on adequate nutrition for optimum development and maintenance of health and functioning. Nutrition also plays a significant role in causing or preventing a number of illnesses, such as cardiovascular disease, some cancers, obesity, type-2 diabetes, and anemia. Peoples’ food choices and their likelihood of being overweight or obese are also influenced by their food environment: the foods available in their neighborhoods including stores, restaurants, schools, and worksites.  \r\n\r\nThe modified retail food environment index table is part of a series of indicators in the Healthy Communities Data and Indicators Project (HCI) of the Office of Health Equity. The goal of HCI is to enhance public health by providing data, a standardized set of statistical measures, and tools that a broad array of sectors can use for planning healthy communities and evaluating the impact of plans, projects, policy, and environmental changes on community health. The creation of healthy social, economic, and physical environments that promote healthy behaviors and healthy outcomes requires coordination and collaboration across multiple sectors, including transportation, housing, education, agriculture and others. Statistical metrics, or indicators, are needed to help local, regional, and state public health and partner agencies assess community environments and plan for healthy communities that optimize public health. More information on HCI can be found here: https://www.cdph.ca.gov/Programs/OHE/CDPH%20Document%20Library/Accessible%202%20CDPH_Healthy_Community_Indicators1pager5-16-12.pdf  \r\n\r\nThe format of the modified retail food environment table is based on the standardized data format for all HCI indicators. As a result, this data table contains certain variables used in the HCI project (e.g., indicator ID, and indicator definition). Some of these variables may contain the same value for all observations.   \r\n",
+  "geo_coverage": "Statewide",
+  "geographic_granularity": "census tract",
+  "keywords": [
+    "fast food",
+    "food",
+    "food desert",
+    "hci",
+    "healthy community indicator",
+    "healthy food",
+    "modified retail food environment index",
+    "social determinants of health"
+  ],
+  "limitations": "Limitations",
+  "name": "modified-retail-food-environment-index",
+  "program_web_page": "https://www.cdph.ca.gov/Programs/OHE/Pages/HRSU.aspx ",
+  "related_resources": "",
+  "resources": [
+    {
+      "format": "PDF",
+      "name": "narrative-and-examples-for-modified-retail-food-environment",
+      "path": "narrative-and-examples-for-modified-retail-food-environment.pdf",
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/714a9d67-3291-447b-94b9-9d3e1063d176/resource/15b4740d-7916-48b7-92b9-8e5b274e4d9b/download/hci_retailfoodenvironment_75_narrative_and_examples_11-28-17-ada.pdf",
+          "title": "Narrative and Examples for Modified Retail Food Environment"
+        }
+      ],
+      "title": "Narrative and Examples for Modified Retail Food Environment"
+    },
+    {
+      "description": "This table contains data on the modified retail food environment index for California, its regions, counties, cities, towns, and census tracts.   The format of the modified retail food environment table is based on the standardized data format for all HCI indicators. As a result, this data table contains certain variables used in the HCI project (e.g., indicator ID, and indicator definition). Some of these variables may contain the same value for all observations.",
+      "format": "XLSX",
+      "hash": "25409fa66b4e48060b16fbce8c00bff9",
+      "name": "modified-retail-food-environment-index-data",
+      "path": "modified-retail-food-environment-index-data.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "description": "Indicator identification number\r\n75; code for internal use in the Office of Health Equity\r\n",
+            "name": "ind_id",
+            "type": "string"
+          },
+          {
+            "description": "Definition of indicator in plain language:\r\nModified retail food environment index\r\n",
+            "name": "ind_definition",
+            "type": "string"
+          },
+          {
+            "description": "Year(s) that the indicator was reported\r\n",
+            "name": "reportyear",
+            "type": "string"
+          },
+          {
+            "description": "Numeric code for a race/ethnicity group.\r\nNot applicable for this table.\r\n",
+            "name": "race_eth_code",
+            "type": "string"
+          },
+          {
+            "description": "Name of race/ethnic group. \r\nNot applicable for this table.\r\n",
+            "name": "race_eth_name",
+            "type": "string"
+          },
+          {
+            "description": "Type of geographic unit:\r\nCT=Census tract; PL=Place (includes cities, towns, and census designated places -CDP-. It does not include unincorporated communities); CO=County; RE=region; CA=State\r\n",
+            "name": "geotype",
+            "type": "string"
+          },
+          {
+            "description": "Value of geographic unit: \r\nCensus tract code (11-characters in length starting with 06);  place code (5-characters in length); FIPS ID for counties (5-characters in length starting with 06); region id (2-characters in length); state id (2-character in length)\r\n\r\n",
+            "name": "geotypevalue",
+            "type": "string"
+          },
+          {
+            "description": "Name of geographic unit:\r\nCensus tract name, place name, county name, region name, or state name\r\n",
+            "name": "geoname",
+            "type": "string"
+          },
+          {
+            "description": "Name of county that geotype is in; Not available for geotypes RE and CA\r\n\r\n",
+            "name": "county_name",
+            "type": "string"
+          },
+          {
+            "description": "FIPS code of county that geotype is in: 2-digit census state code (06) plus 3-digit census county code\r\n\r\n",
+            "name": "county_fips",
+            "type": "string"
+          },
+          {
+            "description": "Metopolitan Planning Organization (MPO)-based region name: see MPO_Regions Tab.\r\nMetropolitan Planning Organizations (MPO) regions as reported in the 2010 California Regional Progress Report (http://www.dot.ca.gov/hq/tpp/offices/orip/Collaborative%20Planning/Files/CARegionalProgress_2-1-2011.pdf).\r\n",
+            "name": "region_name",
+            "type": "string"
+          },
+          {
+            "description": "Metopolitan Planning Organization (MPO)-based region name: see MPO_Regions Tab.\r\n01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California\r\n",
+            "name": "region_code",
+            "type": "string"
+          },
+          {
+            "description": "Numeric code for strata one\r\nNot applicable\r\n",
+            "name": "strata_one_code",
+            "type": "string"
+          },
+          {
+            "description": "Strata one: country of birth of the population\r\nNot applicable\r\n",
+            "name": "strata_one_name",
+            "type": "string"
+          },
+          {
+            "description": "Not available for this dataset\r\n",
+            "name": "strata_two_code",
+            "type": "string"
+          },
+          {
+            "description": "Not available for this dataset\r\n",
+            "name": "strata_two_name",
+            "type": "string"
+          },
+          {
+            "description": "Number of healthy food retailers\r\n",
+            "name": "numerator",
+            "type": "string"
+          },
+          {
+            "description": "Total number of healthy and less healthy food retailers\r\n",
+            "name": "denominator",
+            "type": "string"
+          },
+          {
+            "description": "Modified retail food environment index (numerator/denominator*100)\r\n",
+            "name": "estimate",
+            "type": "string"
+          },
+          {
+            "description": "Lower limit of 95% confidence interval around the estimate: The 95% confidence limits depict the range within which the percentage would probably occur in 95 of 100 sets of data (if data similar to the present set were independently acquired on 100 separate occasions). In five of those 100 data sets, the percentage would fall outside the limits.\r\n",
+            "name": "ll_95ci",
+            "type": "string"
+          },
+          {
+            "description": "Upper limit of 95% confidence interval.  \r\n",
+            "name": "ul_95ci",
+            "type": "string"
+          },
+          {
+            "description": "Standard error of the estimate: measure of the precision of the sample mean.  The standard error falls as the sample size increases. (Reference: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/)\r\n",
+            "name": "se",
+            "type": "string"
+          },
+          {
+            "description": "Relative standard error (se/estimate * 100) expressed as a percent: provides the rational basis for determining which estimates may be considered “unreliable.” Conforming to National Center for Health Statistics (NCHS) standards, estimates that are calculated from fewer than 20 data elements, the equivalent of an RSE of 23 percent or more, are considered unreliable. For this project we consider estimates with RSE ≥ 30% as unreliable.\r\n\r\n",
+            "name": "rse",
+            "type": "string"
+          },
+          {
+            "description": "Statewide decile ranking: 'CA_decile' groups places into 10 groups (or deciles) according to the distribution of values of the estimate. Highest estimate values are included in the first decile.  Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records). As a result, all 0 values will be assigned to the 4th decile: the mean between the 1st and 7th deciles.  \r\n",
+            "name": "ca_decile",
+            "type": "number"
+          },
+          {
+            "description": "California Ratio: ratio estimate/state estimate; indicates how many times the local estimate is higher or lower than the state estimate. Values higher than 1 indicate local estimate are higher than state estimates.\r\n",
+            "name": "ca_rr",
+            "type": "string"
+          },
+          {
+            "description": "Date/time stamp of version of data: mm/DD/CCYY hh:mm:ss\r\n\r\n",
+            "name": "version",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/714a9d67-3291-447b-94b9-9d3e1063d176/resource/c58c1b68-6545-4039-bc52-6facf120a4c7/download/hciretailfoodenvironment75cacoreplct201715nov17.csv",
+          "title": "Modified Retail Food Environment Index-Data"
+        }
+      ],
+      "title": "Modified Retail Food Environment Index-Data"
+    },
+    {
+      "name": "chart-modified-retail-food-environment",
+      "path": "chart-modified-retail-food-environment",
+      "sources": [
+        {
+          "path": "https://www.cdph.ca.gov/Programs/OHE/Pages/HCI-RetailFood.aspx",
+          "title": "Chart: Modified Retail Food Environment"
+        }
+      ],
+      "title": "Chart: Modified Retail Food Environment"
+    },
+    {
+      "name": "esri-story-map-modified-retail-food-environment",
+      "path": "esri-story-map-modified-retail-food-environment",
+      "sources": [
+        {
+          "path": "https://cdphdata.maps.arcgis.com/apps/MapSeries/index.html?appid=22cc4b66ba724fb28ccaa0c4dbbc943a",
+          "title": "ESRI Story Map: Modified Retail Food Environment"
+        }
+      ],
+      "title": "ESRI Story Map: Modified Retail Food Environment"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "CDPH Office of Health Equity, Health Research and Statistics Unit",
+      "web": "https://www.cdph.ca.gov/Programs/OHE/Pages/HCI-Search.aspx"
+    }
+  ],
+  "temporal_coverage": "2017",
+  "title": "Modified Retail Food Environment Index"
+}
